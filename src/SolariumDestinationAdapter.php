@@ -54,10 +54,10 @@ final class SolariumDestinationAdapter implements DestinationAdapter, ProgressLi
      */
     private $deletedDocumentIds = [];
 
-    public function __construct(ClientInterface $solrClient, LoggerInterface $logger = null, int $batchSize = 20)
+    public function __construct(ClientInterface $solrClient, LoggerInterface $logger = new NullLogger(), int $batchSize = 20)
     {
         $this->solrClient = $solrClient;
-        $this->logger = $logger ?: new NullLogger();
+        $this->logger = $logger;
         $this->batchSize = $batchSize;
     }
 
