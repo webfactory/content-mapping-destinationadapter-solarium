@@ -14,8 +14,8 @@
 
     "require": {
         "php": ">= 8.1",
-        "psr/log": "^1.0|^2.0|^3.0",
-        "solarium/solarium": "^6.1",
+        "psr/log": "^1.0 || ^2.0 || ^3.0",
+        "solarium/solarium": "^6.1 || ^7.0",
         "webfactory/content-mapping": "^3.5"
     },
 
